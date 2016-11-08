@@ -33,10 +33,9 @@ function initVars () {
 //initializing random numbers
 initVars (); 
 
-
-
 //waiting for an event//
 $(document).ready(function() { 
+
 	$("#gem1").on("click", function () {
 		playScore=playScore+gemA;
 		$("#totalScore").html(playScore);
@@ -50,8 +49,9 @@ $(document).ready(function() {
 			$("#wins").html("Wins: "+totWins);
 			alert("You WIN!");
 			initVars ();
-		} else {};
+		} else { };
 	});
+
 	$("#gem2").on("click", function () {
 		playScore=playScore+gemB;
 		$("#totalScore").html(playScore);
@@ -65,11 +65,13 @@ $(document).ready(function() {
 			$("#wins").html("Wins: "+totWins);
 			alert("You WIN!");
 			initVars ();
-		} else {};
+		} else { };
 	});
+
 	$("#gem3").on("click", function () {
 		playScore=playScore+gemC;
 		$("#totalScore").html(playScore);
+		console.log(playScore);
 		if (playScore>randGoal) {
 			totLoss=totLoss+1;
 			$("#losses").html("Losses: "+ totLoss);
@@ -80,8 +82,9 @@ $(document).ready(function() {
 			$("#wins").html("Wins: "+totWins);
 			alert("You WIN!");
 			initVars ();
-		} else {};
+		} else { };
 	});
+
 	$("#gem4").on("click", function () {
 		playScore=playScore+gemD;
 		$("#totalScore").html(playScore);
@@ -95,9 +98,6 @@ $(document).ready(function() {
 			$("#wins").html("Wins: "+totWins);
 			alert("You WIN!");
 			initVars ();
-		} else {		
-		};
+		} else { };
 	});
-
-
 });
