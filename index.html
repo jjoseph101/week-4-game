@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD INFO -->
+<head>
+	<title> Crystal Collector Game</title>
+
+	<!-- VIEWPORT TO ALLOW @MEDIA ON CSS FOR MOBILE -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- BOOTSTRAP THEME -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-pVJelSCJ58Og1XDc2E95RVYHZDPb9AVyXsI8NoVpB2xmtxoZKJePbMfE4mlXw7BJ" crossorigin="anonymous">
+
+	<!-- MY EXTERNAL BOOTSTRAP FILES-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="assets/javascript/game.js"></script>
+</head>
+
+<!--BODY SECTION -->
+<!--BACKGROUND IMAGE-->
+<body class="everything" background="assets/images/gamebkgd.jpg">
+	
+	<!--GAME HEADER-->
+	<div class="row">
+		<div class="gameHeader col-sm-3">
+			<h1>Crystals Collector!</h1>
+		</div>
+	</div>
+
+	<!-- GAME TEXT BODY -->
+	<div class="row">
+		<div class="gameBody col-sm-6">
+			<p>You will be given a random number at the start of the game.<br><br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it.<br><br>Each time when the game starts, the game will change the value of the crystal.</p>
+		</div>
+	</div>
+
+
+	<!--ROW CONTAINING RANDOM GOAL AND TOTAL WINS AND LOSSES-->
+	<div class="row">
+
+		<!--RANDOM GOAL-->
+		<div class="randomGoalBox col-sm-2">
+			<span id="randomGoal">XX</span>
+		</div>
+
+		<!--TOTAL WINS AND LOSSES BOX -->
+		<div class="totalWinsLosses col-sm-1">
+			<div class="row">
+				<BR>
+				<span id="wins">Wins: 0</span>
+			</div>
+			<BR>
+			<div class="row">
+				<span id="losses">Losses: 0</span>
+			</div>
+		</div>		
+	</div>
+
+	<!-- GEM IMAGES -->
+	<div class="row">
+		<div class="gem">
+			<img src="assets/images/Swarovski.jpg" id="gem1">
+		</div>
+		<div class="gem">
+			<img src="assets/images/Topaz.jpg" id="gem2">
+		</div>
+		<div class="gem">
+			<img src="assets/Images/Sapphire.jpg" id="gem3">
+		</div>
+		<div class="gem">
+			<img src="assets/Images/Ruby.jpg" id="gem4">
+		</div>
+	</div>
+
+	<!--TOTAL SCORE THIS ROUND-->
+	<div class="row">
+		<div class="totalScoreBox col-sm-2">
+			<div class="row">
+				<p>Your total score is:</p>
+			</div>
+			<BR>
+			<div class="row totalS">
+				<span id="totalScore">0</span>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+
+</html>
