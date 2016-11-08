@@ -14,7 +14,14 @@
 	<!-- MY EXTERNAL BOOTSTRAP FILES-->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script src="assets/javascript/game.js"></script>
+
+	<!-- LINK TO JQUERY LIBRARY -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+	<!-- Added link to the jQuery Library -->
+  	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <!--BODY SECTION -->
@@ -31,12 +38,12 @@
 	<!-- GAME TEXT BODY -->
 	<div class="row">
 		<div class="gameBody col-sm-6">
-			<p>You will be given a random number at the start of the game.<br><br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it.<br><br>Each time when the game starts, the game will change the value of the crystal.</p>
+			<p>You will be given a random number at the start of the game.<br><br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.<br><br>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it.<br><br>Each time when the game starts, the game will change the value of the crystals.</p>
 		</div>
 	</div>
 
 
-	<!--ROW CONTAINING RANDOM GOAL AND TOTAL WINS AND LOSSES-->
+	<!--ROW CONTAINING RANDOM GOAL AND TOTAL WINS / LOSSES-->
 	<div class="row">
 
 		<!--RANDOM GOAL-->
@@ -83,10 +90,11 @@
 			<div class="row totalS">
 				<span id="totalScore">0</span>
 			</div>
-
-
 		</div>
 	</div>
 </body>
+	
+<!-- LINK TO EXTERNAL JAVASCRIPT FILE-->
+<script src="assets/javascript/game.js"></script>
 
 </html>
